@@ -1,9 +1,11 @@
 export const initializeDefaultData = () => {
+
     const users = [
         { id: 1, username: 'admin', password: 'Admin@123', role: 'admin' },
         { id: 2, username: 'sanjeevan', password: 'Sanjeevan@234', role: 'user' },
         { id: 3, username: 'sumanth', password: 'Sumanth@345', role: 'user' },
-        { id: 4, username: 'ujval', password: 'Ujval@456', role: 'user' }
+        { id: 4, username: 'ujval', password: 'Ujval@456', role: 'user' },
+        { id: 5, username: 'rhul', password: 'rahul@123', role: 'user' }
     ];
 
     if (!localStorage.getItem('users')) {
