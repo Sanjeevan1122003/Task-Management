@@ -8,7 +8,7 @@ const UserList = ({ onTaskReassigned }) => {
     useEffect(() => {
         const loadUsers = () => {
             const allUsers = getUsers();
-            setUsers(allUsers);
+            setUsers(allUsers.slice(1));
         };
         loadUsers();
     }, []);
